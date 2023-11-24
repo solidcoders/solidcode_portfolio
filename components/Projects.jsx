@@ -8,6 +8,7 @@ import googleUiCloneImg from "../public/assets/projects/googleui.png";
 import allprogreen from "../public/assets/projects/allprogreen.png"
 import titaniumpos from "../public/assets/projects/pos.png"
 import myzamtel from "../public/assets/projects/myzamtel.png"
+import smarttutor from "../public/assets/projects/smarttutor.png"
 import ProjectItem from "./ProjectItem";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
@@ -58,6 +59,15 @@ const projectItems = [
 			"https://play.google.com/store/apps/details?id=com.myzamtel&hl=en&gl=US&pli=1"
 		}
 	/>,
+	<ProjectItem
+		key={5}
+		title={"Smart Tutor ZM"}
+		backgroundImg={smarttutor}
+		projectType={"React Native, Express & Firebase"}
+		projectUrl={
+			"https://play.google.com/store/apps/details?id=com.smarttutorzm"
+		}
+	/>,
 ];
 
 function Projects() {
@@ -70,7 +80,7 @@ function Projects() {
 				<p className="text-xl tracking-widest uppercase text-[#5651e5]">
 					Projects
 				</p>
-				<h2 className=" pt-4 pb-10">What I&apos;ve Built</h2>
+				<h2 className=" pt-4 pb-10">What We&apos;v Built</h2>
 
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
 					{projectItems.map((item, i) => {
