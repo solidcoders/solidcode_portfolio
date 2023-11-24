@@ -69,7 +69,7 @@ function contacts() {
 
 					<div className="col-span-3 w-full shadow-xl shadow-gray-400 rounded-xl h-auto lg:p-4 ">
 						<div className="p-4">
-							<form onSubmit={()=>{}}>
+							<form >
 								<div className="grid md:grid-cols-2 gap-4 w-full py-2">
 									<div className="flex flex-col">
 										<label className="uppercase text-sm py-2">
