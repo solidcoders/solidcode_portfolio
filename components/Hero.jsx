@@ -21,12 +21,13 @@ export default function Hero() {
 						let&apos;s build something Great
 					</p>
 					<h1 className="py-4 text-gray-700">
-						
-						<span className="text-[#5651e5]">
-							SolidCode
-						</span>
+						<span className="text-[#5651e5]">SolidCode</span>
+						<br className="m-0" />
+						<span className="text-[#5651e5] text-2xl">BYTEHUB</span>
 					</h1>
-					<h3 className="py-2 text-gray-700">Transforming ideas into Robust Realities</h3>
+					<h3 className="py-2 text-gray-700">
+						Transforming ideas into Robust Realities
+					</h3>
 					<p className="py-4 text-gray-600 max-w-[70%] m-auto">
 						Android & IOS, Web, Desktop, IoT, REST API, SOAP, gRPC
 					</p>
@@ -39,15 +40,16 @@ export default function Hero() {
 						>
 							<FaLinkedin />
 						</Link>
+						*/}
 						<Link
 							className="bg-white z-10 mix-blend-multiply hover:mix-blend-normal rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
-							href={"https://github.com/SikanaAli"}
+							href={"https://github.com/solidcoders"}
 						>
 							<FaGithub />
-						</Link> */}
+						</Link>
 						<Link
 							className="bg-gray-300 z-10 mr-4 mix-blend-multiply hover:mix-blend-normal rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
-							href={"mailto:sikanaalinaswe@gmail.com"}
+							href={"mailto:info@bytehubzambia.onmicrosoft.com"}
 						>
 							<AiOutlineMail />
 						</Link>

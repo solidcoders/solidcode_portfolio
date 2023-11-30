@@ -13,7 +13,7 @@ export default function IndexPage() {
 			<About />
 			<Skills />
 			<Projects />
-			<Contact />
+			{/* <Contact /> */}
 		</>
 	);
 }

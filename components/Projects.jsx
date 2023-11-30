@@ -5,14 +5,58 @@ import React, { useState, useEffect } from "react";
 import deserter2dImg from "../public/assets/projects/deserter2d.jpg";
 import publicApisImg from "../public/assets/projects/public_apis.png";
 import googleUiCloneImg from "../public/assets/projects/googleui.png";
-import allprogreen from "../public/assets/projects/allprogreen.png"
-import titaniumpos from "../public/assets/projects/pos.png"
-import myzamtel from "../public/assets/projects/myzamtel.png"
-import smarttutor from "../public/assets/projects/smarttutor.png"
+import teslaclone from "../public/assets/projects/teslacone.png";
+import titaniumpos from "../public/assets/projects/pos.png";
+import myzamtel from "../public/assets/projects/myzamtel.png";
+import smarttutor from "../public/assets/projects/smarttutor.png";
+import comehome from "../public/assets/projects/comehome.png";
+import covid19tracker from "../public/assets/projects/covid19.png";
+import netflixClone from "../public/assets/projects/netflix.png";
 import ProjectItem from "./ProjectItem";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const projectItems = [
+	<ProjectItem
+		key={5}
+		title={"My Zamtel"}
+		backgroundImg={myzamtel}
+		projectType={"React Native"}
+		projectUrl={
+			"https://play.google.com/store/apps/details?id=com.myzamtel&hl=en&gl=US&pli=1"
+		}
+	/>,
+	<ProjectItem
+		key={5}
+		title={"Smart Tutor ZM"}
+		backgroundImg={smarttutor}
+		projectType={"React Native, Express & Firebase"}
+		projectUrl={
+			"https://play.google.com/store/apps/details?id=com.smarttutorzm"
+		}
+	/>,
+	<ProjectItem
+		key={0}
+		title={"Come Home"}
+		backgroundImg={comehome}
+		projectType={"ReactJS & Redux"}
+		projectUrl={"https://apps.zamtel.co.zm/ComeHome/"}
+	/>,
+	<ProjectItem
+		key={0}
+		title={"Covid 19 Tracker"}
+		backgroundImg={covid19tracker}
+		projectType={"ReactJS & Redux"}
+		projectUrl={"https://covid-19-tracker-6e11e.web.app/"}
+	/>,
+	<ProjectItem
+		key={0}
+		title={"Netflix Clone"}
+		backgroundImg={netflixClone}
+		projectType={"ReactJS & Redux"}
+		projectUrl={"https://netflix-clone-c1fc0.web.app/"}
+	/>,
 	<ProjectItem
 		key={0}
 		title={"Dserter 2D"}
@@ -38,10 +82,10 @@ const projectItems = [
 	/>,
 	<ProjectItem
 		key={3}
-		title={"Allpro Green Energy"}
-		backgroundImg={allprogreen}
-		projectType={"NextJS"}
-		projectUrl={"https://www.allprogreenenergy.com/contact.html"}
+		title={"Tesla Clone"}
+		backgroundImg={teslaclone}
+		projectType={"ReactJS & Firebase"}
+		projectUrl={"https://tesla-clone-4ca3a.web.app/"}
 	/>,
 	<ProjectItem
 		key={4}
@@ -49,24 +93,6 @@ const projectItems = [
 		backgroundImg={titaniumpos}
 		projectType={"PHP"}
 		projectUrl={"http://139.144.5.124/pos/index.php"}
-	/>,
-	<ProjectItem
-		key={5}
-		title={"My Zamtel"}
-		backgroundImg={myzamtel}
-		projectType={"React Native"}
-		projectUrl={
-			"https://play.google.com/store/apps/details?id=com.myzamtel&hl=en&gl=US&pli=1"
-		}
-	/>,
-	<ProjectItem
-		key={5}
-		title={"Smart Tutor ZM"}
-		backgroundImg={smarttutor}
-		projectType={"React Native, Express & Firebase"}
-		projectUrl={
-			"https://play.google.com/store/apps/details?id=com.smarttutorzm"
-		}
 	/>,
 ];
 
@@ -88,7 +114,7 @@ function Projects() {
 					})}
 				</div>
 			</div>
-			<div className="absolute w-full bottom-0 left-0 overflow-hidden leading-[0]">
+			<div className="absolute w-full z-0 bottom-0 left-0 overflow-hidden leading-[0]">
 				<svg
 					data-name="Layer 1"
 					xmlns="http://www.w3.org/2000/svg"
@@ -100,6 +126,16 @@ function Projects() {
 						className="fill-white"
 					></path>
 				</svg>
+			</div>
+			<div className="flex justify-center py-12 z-[40]">
+				<Link href="#home">
+					<div className="rounded-full bg-gray-300 shadow-lg shadow-gray-400 p-4 cursor-pointer scale-110 hover:scale-125 ease-in duration-300">
+						<HiOutlineChevronDoubleUp
+							className="text-[#5651e5]"
+							size={30}
+						/>
+					</div>
+				</Link>
 			</div>
 		</div>
 	);

@@ -43,7 +43,7 @@ function Navbar() {
 				</Link>
 				<div>
 					<ul className="hidden md:flex">
-						<a href="#hero">
+						<a href="#home">
 							<li className="ml-10 text-sm uppercase font-bold hover:border-b">
 								Home
 							</li>
@@ -63,11 +63,11 @@ function Navbar() {
 								Projects
 							</li>
 						</a>
-						<a href={"#contact"}>
+						{/* <a href={"#contact"}>
 							<li className="ml-10 text-sm uppercase font-bold hover:border-b">
 								Contact
 							</li>
-						</a>
+						</a> */}
 					</ul>
 					<div onClick={navHandler} className="md:hidden">
 						<AiOutlineMenu size={25} />
@@ -91,9 +91,11 @@ function Navbar() {
 					<div>
 						<div className="flex w-full items-center justify-between">
 							{/* <Image src='/assets/navLogo.png' alt="/" width={50} height={25}/> */}
-							<h2 className="uppercase text-[#5651e5]">
-								a.sikana
-							</h2>
+							<Link href="/">
+								<h2 className=" text-[#5651e5]">
+									&lt;SolidCode/&gt;
+								</h2>
+							</Link>
 							<div
 								onClick={navHandler}
 								className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -121,32 +123,34 @@ function Navbar() {
 							<Link href="/#projects">
 								<li className="py-4 text-sm ">Projects</li>
 							</Link>
-							<Link href="/#contact">
+							{/* <Link href="/#contact">
 								<li className="py-4 text-sm ">Contact</li>
-							</Link>
+							</Link> */}
 						</ul>
 						<div className="pt-40">
 							<p className="uppercase tracking-widest text-[#5651e5]">
 								Let&apos;s Connect
 							</p>
 							<div className="flex items-center justify-between">
-								<Link
+								{/* <Link
 									className="bg-white z-10 mix-blend-multiply hover:mix-blend-normal rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
 									href={
 										"https://www.linkedin.com/in/alinaswe-sikana/"
 									}
 								>
 									<FaLinkedin />
-								</Link>
+								</Link> */}
 								<Link
 									className="bg-white z-10 mix-blend-multiply hover:mix-blend-normal rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
-									href={"https://github.com/SikanaAli"}
+									href={"https://github.com/solidcoders"}
 								>
 									<FaGithub />
 								</Link>
 								<Link
 									className="bg-white z-10 mix-blend-multiply hover:mix-blend-normal rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
-									href={"mailto:sikanaalinaswe@gmail.com"}
+									href={
+										"mailto:info@bytehubzambia.onmicrosoft.com"
+									}
 								>
 									<AiOutlineMail />
 								</Link>

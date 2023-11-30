@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
@@ -41,14 +42,12 @@ function contacts() {
 									{/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaLinkedin />
                   </div> */}
-										<Link
-											className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
-											href={
-												"https://github.com/solidcoders"
-											}
-										>
-											<FaGithub />
-										</Link>
+									<Link
+										className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+										href={"https://github.com/solidcoders"}
+									>
+										<FaGithub />
+									</Link>
 									<Link
 										className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
 										href={"mailto:sikanaalianswe@gmail.com"}
@@ -69,7 +68,7 @@ function contacts() {
 
 					<div className="col-span-3 w-full shadow-xl shadow-gray-400 rounded-xl h-auto lg:p-4 ">
 						<div className="p-4">
-							<form >
+							<form onSubmit={()=>{}}>
 								<div className="grid md:grid-cols-2 gap-4 w-full py-2">
 									<div className="flex flex-col">
 										<label className="uppercase text-sm py-2">
@@ -77,7 +76,7 @@ function contacts() {
 										</label>
 										<input
 											className="border-2 rounded-lg p-3 flex border-gray-300"
-                      name="uname"
+											name="uname"
 											type="text"
 										/>
 									</div>
@@ -87,7 +86,7 @@ function contacts() {
 										</label>
 										<input
 											className="border-2 rounded-lg p-3 flex border-gray-300"
-                      name="msisdn"
+											name="msisdn"
 											type="tel"
 										/>
 									</div>
@@ -98,7 +97,7 @@ function contacts() {
 									</label>
 									<input
 										className="border-2 rounded-lg p-3 flex border-gray-300"
-                    name="email"
+										name="email"
 										type="email"
 									/>
 								</div>
@@ -108,7 +107,7 @@ function contacts() {
 									</label>
 									<input
 										className="border-2 rounded-lg p-3 flex border-gray-300"
-                    name="subject"
+										name="subject"
 										type="text"
 									/>
 								</div>
@@ -118,27 +117,21 @@ function contacts() {
 									</label>
 									<textarea
 										className="border-2 rounded-lg p-3 flex border-gray-300"
-                    name="message"
+										name="message"
 										rows={10}
 									/>
 								</div>
-								<button className="w-full p-4 text-gray-100 mt-4" type="submit">
+								<button
+									className="w-full p-4 text-gray-100 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff]"
+									type="submit"
+								>
 									Send Message
 								</button>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center py-12">
-					<Link href="/">
-						<div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-							<HiOutlineChevronDoubleUp
-								className="text-[#5651e5]"
-								size={30}
-							/>
-						</div>
-					</Link>
-				</div>
+				
 			</div>
 		</div>
 	);
